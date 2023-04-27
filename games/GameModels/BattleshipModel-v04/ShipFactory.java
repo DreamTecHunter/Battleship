@@ -20,7 +20,7 @@ public class ShipFactory {
      * @param amounts amount of small,medium and large ships in this order(or only small ships/ small and medium ships)
      * @return
      */
-    public static List<AShip> generate(int width, int height, int... amounts)  {
+    public static List<AShip> generate(int width, int height, int... amounts) {
         List<AShip> fleet = new ArrayList<AShip>();
         int failCounter, x, xMin, xMax, y, yMin, yMax;
         AShip newShip;
@@ -72,9 +72,8 @@ public class ShipFactory {
                     newShip.setHead(new Position(x, y, null));
                     for (int k = 0; k < fleet.size(); k++) {
                         try {
-                            if (!newShip.isColliding(fleet.get(k))) {
+                            if (newShip.isColliding(fleet.get(k))) {
                                 save = false;
-                            } else {
                                 failCounter += 1;
                             }
                         } catch (DirectionException e) {
@@ -86,7 +85,9 @@ public class ShipFactory {
                     }
                 }
                 while (!save);
-                fleet.add(newShip);
+                if (save) {
+                    fleet.add(newShip);
+                }
             }
         }
         return fleet;

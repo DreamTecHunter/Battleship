@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="707f8a3b-8469-450d-bfab-fdba9b247364" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../GameModels/BattleshipModel-v04/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GameModels/BattleshipModel-v04/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GameModels/BattleshipModel-v04/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GameModels/BattleshipModel-v04/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GameModels/BattleshipModel-v04/BattleshipModel-v04.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Battleship-v04.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BattleshipController-v04/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BattleshipController-v04/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BattleshipController-v04/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BattleshipController-v04/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BattleshipController-v04/BattleshipController-v04.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BattleshipView-v04/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BattleshipView-v04/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BattleshipView-v04/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BattleshipView-v04/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BattleshipView-v04/BattleshipView-v04.iml" afterDir="false" />
-    </list>
+    <list default="true" id="707f8a3b-8469-450d-bfab-fdba9b247364" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,12 +10,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,18 +27,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "C:/Users/Tobia/Documents/__ordered_school_files/SCHRIFTLICHE MATURA/SWP/games/GameModels/BattleshipModel-v04",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tobia/Documents/__ordered_school_files/TEST-MATURA/SWP/v01&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Tobia\Documents\__ordered_school_files\SCHRIFTLICHE MATURA\SWP\games\GameModels\BattleshipModel-v04" />
@@ -89,6 +70,12 @@
       <option name="presentableId" value="Default" />
       <updated>1682447333810</updated>
       <workItem from="1682447335252" duration="8431000" />
+      <workItem from="1682457275532" duration="449000" />
+      <workItem from="1682482655861" duration="1279000" />
+      <workItem from="1682507884907" duration="688000" />
+      <workItem from="1682521804469" duration="31000" />
+      <workItem from="1682536400833" duration="6124000" />
+      <workItem from="1682575102353" duration="8177000" />
     </task>
     <servers />
   </component>
@@ -105,5 +92,41 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../GameModels/BattleshipModel-v04/BattleshipModel.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../GameModels/BattleshipModel-v04/BattleshipModel.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../GameModels/BattleshipModel-v04/BattleshipModel.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../GameModels/BattleshipModel-v04/BattleshipModel.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../GameModels/BattleshipModel-v04/BattleshipModel.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../GameModels/BattleshipModel-v04/BattleshipModel.java</url>
+          <line>180</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

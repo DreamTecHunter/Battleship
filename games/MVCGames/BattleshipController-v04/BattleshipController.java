@@ -52,20 +52,29 @@ public class BattleshipController {
         view.playing();
     }
 
+    enum PLAYING_STATE{
+        EXIT, PLAY, UNDO, REDO
+    }
 
-    public boolean playingQuestion(BattleshipView view, String input) {
+    public PLAYING_STATE playingQuestion(BattleshipView view, String input) {
         try {
             char choice = input.toCharArray()[0];
             switch (choice) {
                 case 'x':
-                    return false;
+                    return PLAYING_STATE.EXIT;
+                case 'u':
+                    model.undo();
+                    return PLAYING_STATE.UNDO;
+                case 'r':
+                    model.redo();
+                    return PLAYING_STATE.REDO;
                 default:
                     break;
             }
-        }catch(IndexOutOfBoundsException ex){
+        } catch (IndexOutOfBoundsException ex) {
 
         }
-        return true;
+        return PLAYING_STATE.PLAY;
     }
 
     public void shoot(String xInput, String yInput) throws OutOfBoarderException {

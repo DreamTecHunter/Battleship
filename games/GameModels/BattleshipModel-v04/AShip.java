@@ -24,7 +24,7 @@ public abstract class AShip {
     public String toString() {
         return this.getClass().getSimpleName()
                 + "\thead:\t" + this.head
-                + "\ttail:\t" + this.direction
+                + "\tdirection:\t" + this.direction
                 + "\tlength:\t" + this.length;
     }
 

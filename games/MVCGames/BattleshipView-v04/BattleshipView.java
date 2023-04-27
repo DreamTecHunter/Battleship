@@ -36,7 +36,7 @@ public class BattleshipView implements Observer {
 
             case REDRAW:
                 try {
-                    drawBoard(msg.getPositions(), msg.getFleet());
+                    drawBoard(msg.getPositions(), msg.getFleet(), msg.getDestroyed());
                 } catch (ColorException e) {
                     throw new RuntimeException(e);
                 }
@@ -65,6 +65,7 @@ public class BattleshipView implements Observer {
     }
 
     public void start() {
+        println("Welcome to " + name);
         menu();
     }
 
@@ -93,25 +94,28 @@ public class BattleshipView implements Observer {
     }
 
     public void playing() {
-        boolean repeat;
+        BattleshipController.PLAYING_STATE state = BattleshipController.PLAYING_STATE.PLAY;
         do {
+            println("\naction:\t" + state.name().toLowerCase() + "\n");
             try {
-                controller.shoot(controller.input(this, "x:\t"), controller.input(this, "y:\t"));
-                repeat = controller.playingQuestion(this, controller.input(this, "x:\texit", "other:\tplay further", "input:"));
+                if (state == BattleshipController.PLAYING_STATE.PLAY) {
+                    controller.shoot(controller.input(this, "x:\t"), controller.input(this, "y:\t"));
+                }
+                state = controller.playingQuestion(this, controller.input(this, "x:\texit", "u:\tundo", "r:\tredo", "other:\tplay further", "input:"));
             } catch (OutOfBoarderException e) {
                 println(e.getMessage());
-                repeat = true;
-            } catch (Exception ex){
-                repeat = true;
-            }finally{
+                state = BattleshipController.PLAYING_STATE.PLAY;
+            } catch (Exception ex) {
+                state = BattleshipController.PLAYING_STATE.PLAY;
+            } finally {
             }
-        } while (repeat);
+        } while (state != BattleshipController.PLAYING_STATE.EXIT);
     }
 
-    public void drawBoard(List<List<Position>> positions, List<AShip> fleet) throws ColorException {
+    public void drawBoard(List<List<Position>> positions, List<AShip> fleet, List<AShip> destroyed) throws ColorException {
         final String colorExceptionText = "Board is missing right hit-definitions.";
         StringBuffer sb = new StringBuffer();
-        sb.append("\nlasting ships:\t" + fleet.size() + "\n");
+        sb.append("\nlasting ships:\t" + fleet.size() + "\tdestroyed ships:\t" + destroyed.size() + "\n\n");
         sb.append("\t");
         for (int x = 0; x < positions.get(0).size(); x++) {
             sb.append("\t" + x);

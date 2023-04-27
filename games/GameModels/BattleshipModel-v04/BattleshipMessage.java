@@ -8,11 +8,13 @@ public class BattleshipMessage {
     private ACTION action;
     private List<List<Position>> positions;
     private List<AShip> fleet;
+    private List<AShip> destroyed;
 
-    public BattleshipMessage(ACTION action, List<List<Position>> positions, List<AShip> fleet) {
+    public BattleshipMessage(ACTION action, List<List<Position>> positions, List<AShip> fleet, List<AShip> destroyed) {
         this.action = action;
         this.positions = positions;
         this.fleet = fleet;
+        this.destroyed = destroyed;
     }
 
     public ACTION getAction() {
@@ -25,5 +27,9 @@ public class BattleshipMessage {
 
     public List<AShip> getFleet() {
         return fleet;
+    }
+
+    public List<AShip> getDestroyed() {
+        return destroyed;
     }
 }
